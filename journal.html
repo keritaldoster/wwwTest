@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Wildlife Journal</title>
+<link rel="stylesheet" href="themes/wildlifetheme.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.css" />
+<script src="themes/jquery.js"></script>
+<script src="themes/index.js"></script>
+<script src="themes/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").load("test.txt");
+    });
+});
+</script>
+
+
+</head> 
+
+	<body>
+	
+		<div data-role="page" id="main">
+			<div data-role="header">
+				<h1>My Entries</h1>
+			</div>
+
+
+			
+			<div data-role="content" class="ui-content">
+
+				<p>Add entires or view past entries</p><br>
+
+				<ul data-role="listview">
+					<li><a href="add.html" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Entry</a>
+				</ul><br><br>
+
+				<ul data-role="listview">
+					<li id="div1"><a href="#" class="ui-btn ui-icon-edit"><img src="images/bear.jpg">Mar 01 2015</a></li>
+					<li><a href="#" class="ui-btn ui-icon-edit"><img src="images/tiger.jpg">Dec 08 2014</a>
+					<li><a href="#" class="ui-btn ui-icon-edit"><img src="images/wood.jpg">Aug 19 2014</a>
+					<li><a href="#" class="ui-btn ui-icon-edit"><img src="images/squirrel.jpg">Aug 4 2014</a>
+				</ul>
+
+			</div>
+
+
+			<div data-role="footer"  data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+					<li><a href="journal.html" class="ui-btn ui-icon-edit ui-btn-icon-top"></a>
+					<li><a href="add.html" class="ui-btn ui-icon-plus ui-btn-icon-top"></a>
+					<li><a href="search.html" class="ui-btn ui-icon-search ui-btn-icon-top"></a>
+					<li><a href="share.html" class="ui-btn ui-icon-action ui-btn-icon-top"></a>
+					</ul>
+				</div>
+			</div>
+
+
+			
+		</div>
+		
+	</body>
+	
+</html>
